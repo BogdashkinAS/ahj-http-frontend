@@ -2,8 +2,6 @@ import { TicketService } from './service';
 import pen from '../img/pen.jpg';
 import cross from '../img/cross.jpg';
 
-localStorage.clear();
-
 // Функция добавления запроса на создание нового тикета
 export function addInfo() {
   const squareForm = document.createElement('div');
@@ -24,10 +22,6 @@ export function addInfo() {
   document.body.appendChild(squareForm);
   const litInput = document.querySelector('.little-description-input');
   const fullInput = document.querySelector('.full-description-input');
-  // let littleText = localStorage.getItem('little-text');
-  // let fullText = localStorage.getItem('full-text');
-  // litInput.value = littleText;
-  // fullInput.value = fullText;
 
   document.querySelector('.btn-ok').addEventListener('click', () => {
     if (!litInput.value) {
@@ -38,11 +32,8 @@ export function addInfo() {
     }
     console.log(litInput.value);
     console.log(fullInput.value);
-    // localStorage.setItem('little-text', litInput.value);
-    // localStorage.setItem('full-text', fullInput.value);
     squareForm.remove();
     addTicket(litInput.value, fullInput.value);
-    // allTicket();
   });
 
   document.querySelector('.btn-no').addEventListener('click', () => {

@@ -1,51 +1,4 @@
-// const BASE_URL = 'http://localhost:7071'
 const TICKET_BASE_URL = 'http://localhost:7070'
-
-// export class BookService {
-//   static async create (newBook) {
-//     const response = await fetch(`${BASE_URL}/books`, {
-//       method: 'POST',
-//       body: JSON.stringify(newBook),
-//       headers: {
-//         'Content-Type': 'text/json;charset=UTF-8'
-//       }
-//     })
-//     const data = await response.json()
-//     return data;
-//   }
-
-//   static async update (book) {
-//     const response = await fetch(`${BASE_URL}/books/${book.id}`, {
-//       method: 'POST',
-//       body: JSON.stringify(book),
-//       headers: {
-//         'Content-Type': 'text/json;charset=UTF-8'
-//       }
-//     })
-//     const data = await response.json()
-//     return data;
-//   }
-
-//   static async delete (bookId) {
-//     const response = await fetch(`${BASE_URL}/books/${bookId}`, {
-//       method: 'DELETE'
-//     })
-//     const data = await response.json()
-//     return data;
-//   }
-
-//   static async get (bookId) {
-//     const response = await fetch(`${BASE_URL}/books/${bookId}`)
-//     const data = await response.json()
-//     return data;
-//   }
-
-//   static async all () {
-//     const response = await fetch(`${BASE_URL}/books`)
-//     const data = await response.json()
-//     return data;
-//   }
-// }
 
 export class TicketService {
   static async create (newTicket) {
@@ -63,12 +16,6 @@ export class TicketService {
     const url = new URL(TICKET_BASE_URL)
     url.searchParams.append('method', 'updateTicket')
     url.searchParams.append('id', ticket.id) // экранизируются
-
-    // const searchParams = new URLSearchParams()
-    // searchParams.searchParams.append('method', 'updateTicket')
-    // searchParams.searchParams.append('id', ticket.id) // экранизируются
-    // searchParams.toString() // method=updateTicket&id=???
-    // ${TICKET_BASE_URL}?searchParams.toString()
 
     const response = await fetch(url, {
       method: 'POST',
