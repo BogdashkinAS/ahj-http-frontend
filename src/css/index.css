@@ -1,0 +1,287 @@
+body {
+  background-image: url("../img/image.jpg");
+  background-repeat: repeat;
+  font-family: Arial, sans-serif;
+}
+
+.add-ticket {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-ticket:hover {
+    background-color: lightgray;
+}
+
+.square-form {
+  position: absolute;
+  top: 15vh;
+  left: 25vw;
+  width: 410px;
+  height: 340px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.title {
+  text-align: center;
+}
+
+.little-description-input {
+  position: relative;
+  width: 375px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+.full-description-input {
+  position: relative;
+  width: 375px;
+  height: 70px;
+  border: 1px solid black;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.btn-no {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-top: 18px;
+  margin-left: 180px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.btn-no:hover {
+    background-color: lightgray;
+}
+
+.btn-ok {
+  position: absolute;
+  top: 270px;
+  left: 327px;
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.btn-ok:hover {
+    background-color: lightgray;
+}
+
+.square-form-update {
+  position: absolute;
+  top: 15vh;
+  left: 25vw;
+  width: 410px;
+  height: 340px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.title-update {
+  text-align: center;
+}
+
+.little-description-input-update {
+  position: relative;
+  width: 375px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+.full-description-input-update {
+  position: relative;
+  width: 375px;
+  height: 70px;
+  border: 1px solid black;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.btn-no-update {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-top: 18px;
+  margin-left: 180px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.btn-no-update:hover {
+    background-color: lightgray;
+}
+
+.btn-ok-update {
+  position: absolute;
+  top: 270px;
+  left: 327px;
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.btn-ok-update:hover {
+    background-color: lightgray;
+}
+
+.square-form-delete {
+  position: absolute;
+  top: 15vh;
+  left: 25vw;
+  width: 410px;
+  height: 180px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.title-delete {
+  text-align: center;
+}
+
+.btn-no-delete {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-top: 18px;
+  margin-left: 180px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.btn-no-delete:hover {
+    background-color: lightgray;
+}
+
+.btn-ok-delete {
+  position: absolute;
+  top: 105px;
+  left: 327px;
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.btn-ok-delete:hover {
+    background-color: lightgray;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 15vh;
+  left: 5vw;
+  width: 750px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  align-items: center;
+  flex: 1;
+}
+
+.cards.active {
+  height: 150px;
+}
+
+.card-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+  order: 0;
+}
+
+.card-checkbox.active::after {
+  content: "✔";
+  padding-left: 5px;
+}
+
+.card-full-description {
+  margin-left: auto;
+}
+
+.circle-pen {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+  order: 0;
+}
+
+.circle-pen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle-delete {
+  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+  order: 0;
+}
+
+.circle-delete img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.full-description {
+  margin-left: 55px;
+  text-align: left;
+  flex-basis: auto;
+  order: 1;
+}
